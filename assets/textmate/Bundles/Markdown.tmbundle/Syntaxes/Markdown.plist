@@ -513,10 +513,6 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#link-ref-literal</string>
-				</dict>
-				<dict>
-					<key>include</key>
 					<string>#link-ref</string>
 				</dict>
 			</array>
@@ -764,10 +760,6 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#link-ref-literal</string>
-				</dict>
-				<dict>
-					<key>include</key>
 					<string>#link-ref</string>
 				</dict>
 			</array>
@@ -881,10 +873,6 @@
 				<dict>
 					<key>include</key>
 					<string>#image-ref</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#link-ref-literal</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -1058,12 +1046,17 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>string.other.link.title.markdown</string>
+					<string>string.other.link.description.markdown</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.markdown</string>
 				</dict>
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.markdown</string>
+					<string>invalid.illegal.whitespace.markdown</string>
 				</dict>
 				<key>5</key>
 				<dict>
@@ -1082,44 +1075,9 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*+\])*+)(\])[ ]?(\[)([^\]]*+)(\])</string>
+			<string>(\[)((?:[^\[\]\\]|\\.)+)(\])(\s?)(\[)(.*?)(\])</string>
 			<key>name</key>
 			<string>meta.link.reference.markdown</string>
-		</dict>
-		<key>link-ref-literal</key>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.markdown</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>string.other.link.title.markdown</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.markdown</string>
-				</dict>
-				<key>5</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.constant.begin.markdown</string>
-				</dict>
-				<key>6</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.constant.end.markdown</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(\[)((?&lt;square&gt;[^\[\]\\]|\\.|\[\g&lt;square&gt;*+\])*+)(\])[ ]?(\[)(\])</string>
-			<key>name</key>
-			<string>meta.link.reference.literal.markdown</string>
 		</dict>
 		<key>list-paragraph</key>
 		<dict>
