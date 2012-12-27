@@ -1073,41 +1073,7 @@
 			<key>name</key>
 			<string>meta.link.reference.markdown</string>
 		</dict>
-		<key>list-paragraph</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>begin</key>
-					<string>\G\s+(?=\S)</string>
-					<key>end</key>
-					<string>^\s*$</string>
-					<key>name</key>
-					<string>meta.paragraph.list.markdown</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#inline</string>
-						</dict>
-						<dict>
-							<key>captures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>punctuation.definition.list_item.markdown</string>
-								</dict>
-							</dict>
-							<key>comment</key>
-							<string>Match the list punctuation</string>
-							<key>match</key>
-							<string>^\s*([*+-]|[0-9]+\.)</string>
-						</dict>
-					</array>
-				</dict>
-			</array>
-		</dict>
+
 		<key>raw</key>
 		<dict>
 			<key>captures</key>
